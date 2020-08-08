@@ -1,39 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorAccent"
-    tools:context=".LoginActivity">
-    <Button
-        android:id="@+id/btnRegistro"
-        android:layout_width="320dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@color/colorButton"
-        android:fontFamily="@font/alike"
-        android:onClick="btnRegistroClick"
-        android:text="Registrarse"
-        android:textColor="@color/colorAccent"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLoginId"
-        app:layout_constraintVertical_bias="0.01" />
+    tools:context=".ui.login.LoginActivity">
 
     <Button
         android:id="@+id/btnLoginId"
         android:layout_width="320dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@color/colorButton"
@@ -47,19 +26,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.569"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword"
         app:layout_constraintVertical_bias="0.053" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/txtEmail"
         android:layout_width="308dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="176dp"
+        android:layout_marginTop="190dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:fontFamily="@font/alike"
-        android:hint="Usuario"
+        android:hint="Digite correo (ejemplo@gmail.com)"
         android:inputType="textPersonName"
         android:textColor="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,20 +47,20 @@
         app:layout_constraintTop_toBottomOf="@+id/tIngresoId" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/txtPassword"
         android:layout_width="305dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:fontFamily="@font/alike"
-        android:hint="Contraseña"
-        android:inputType="textPersonName"
+        android:hint="Digite Contraseña"
+        android:inputType="textPassword"
         android:textColor="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
 
     <TextView
         android:id="@+id/tIngresoId"
@@ -109,5 +88,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ricuras3" />
-</android.support.constraint.ConstraintLayout>
+        app:srcCompat="@drawable/ricuras" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
